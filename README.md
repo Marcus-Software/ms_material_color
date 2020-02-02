@@ -1,22 +1,29 @@
 # Overview
 
-A simple lib to incremease Map with usefull functions
+A Flutter lib to simplify creation of MaterialColor with shaders
 
-## Whats MS_Map_Utils do
+## Whats MS_Material_Color do
 
-Add usefull functions to map:
-
-- `trim` trim all Strings in a map _it's recursive_
-- `compact` remove all MapEntries thats values is `null` _it's recursive too_
+Create a MsMaterialColor and gerenate 10 shader of base color
 
 ## Usage
 
-Just import lib and use [extensions](https://dart.dev/guides/language/extension-methods), call the functions to starts work:
+Just import lib and use:
 
 ```dart
-import 'package:ms_map_utils/ms_map_utils.dart';
+import 'package:ms_material_color/ms_material_color.dart';
 
-Map itsAMap = {'key1':null,'key2':'         just a String withs extras spaces en start and end            '};
-itsAMap.compact(); // Output: {'key2':'         just a String withs extras spaces en start and end            '}
-itsAMap.trim(); // Output: {'key2':'just a String withs extras spaces en start and end'}
+//.. more flutter code here.
+@override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Color Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: MsMaterialColor(0xffffd700)),
+      home: MyHomePage(title: 'MS MaterialColor Demo Home Page'),
+    );
+  }
+//.. more flutter code here too, maybe not.
 ```
+
+![Screenshot](./screenshot.png)
