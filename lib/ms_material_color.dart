@@ -3,7 +3,7 @@ import 'dart:math' show min;
 
 /// `MsMaterialColor` is a simple solution to creation a `MaterialColor`
 /// with 10 shades variants 50, 100, 200, ...900 use only one base color.
-/// 
+///
 /// See also:
 ///
 ///  * [MaterialColor](https://api.flutter.dev/flutter/material/MaterialColor-class.html), which
