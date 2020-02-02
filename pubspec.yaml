@@ -1,0 +1,14 @@
+name: ms_material_color
+description: A Flutter lib to simplify creation of MaterialColor with shaders
+version: 0.1.0
+homepage: https://github.com/Marcus-Software/ms_material_color
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  test: ^1.9.2
